@@ -1,0 +1,2 @@
+# Note: rustfmt's `ignore` option is nightly-only. We avoid warnings on stable by
+# adding `#![rustfmt::skip]` to generated files instead of using `ignore` here.
