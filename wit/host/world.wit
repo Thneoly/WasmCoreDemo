@@ -1,0 +1,12 @@
+package host:core@0.1.0;
+interface hostitf {
+    connect: func(addr: string) -> string;
+    read: func() -> string;
+    write: func(data: string) -> u32;
+    close: func() -> bool;
+    log: func(data: string);
+}
+
+world host {
+    import hostitf;
+}

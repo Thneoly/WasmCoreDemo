@@ -1,0 +1,3 @@
+world corew {
+    export run: func(u32, list<string>) -> u32;
+}

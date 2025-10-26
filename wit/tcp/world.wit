@@ -1,0 +1,11 @@
+package customer:tcp@0.1.0;
+use host:core/hostitf@0.1.0;
+interface tcpitf {
+    connect: func() -> u32; // 根据 id 判断是哪个连接
+    start: func(id: u32) -> bool ;
+    stop: func(id: u32) -> bool;
+}
+world tcp {
+    import hostitf;
+    export tcpitf;
+}
